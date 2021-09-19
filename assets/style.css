@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background-color:rgb(21, 78, 134);
 }
 
@@ -28,7 +28,7 @@ nav li {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 150%;
 }
 
 section {
@@ -58,7 +58,19 @@ footer {
     position:relative;
 }
 
-/* page-links and banner style the header */
+#bio {
+    background-color: azure;
+}
+
+.contactInfo {
+    border: black 3px solid;
+    background: azure;
+
+}
+.listInfo {
+    background: azure;
+}
+
 .page-links {
     background-color: lightblue;
 }
@@ -74,7 +86,6 @@ footer {
     background-color: transparent;
 }
 
-/* words, about-and-pic, and krystyn all style the about me area */
 .words {
     border-left: black solid 5px;
     width: 600px;
@@ -93,7 +104,11 @@ footer {
     max-width: 150px;
 }
 
-/* knowledge, scratchgames, and currentprojects style the main containers for the projects section */
+.words {
+    background-color: azure;
+    border-radius: 5%;
+}
+
 .knowledge {
     border: solid black 3px;
     margin: 10px;
@@ -115,7 +130,6 @@ footer {
     flex: 1;
 } 
 
-/* titles-for-content positions the project titles over the pictures */
 .titles-for-content {
     position: absolute;
     bottom: 8px;
@@ -125,7 +139,6 @@ footer {
     padding: 10px;
 }
 
-/* .featuredcontent and .othercontent create the picture sizes in projects */
 .featuredcontent {
     height: 100;
     width: 100%;
@@ -136,7 +149,6 @@ footer {
     width: 100%;
 } 
 
-/* .sidebyside-aboutme, .sidebyside, and .projectalignment help align the containers in the project area */
 .sidebyside-aboutme {
     display: flex;
     margin-top: 30px;
@@ -153,7 +165,6 @@ footer {
     flex-direction: row;
 }
 
-/* below are the media queries to adjust the view and color of the page as the screen adjusts*/
 @media screen and (max-width: 1000px) {
     header {
         background-color: lightseagreen;
@@ -202,6 +213,9 @@ footer {
     }
     nav ul {
         background-color: darkolivegreen;
+    }
+    h1 {
+        font-size: 80%;
     }
     .sidebyside-aboutme {
         display: flex;
