@@ -1,0 +1,231 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(21, 78, 134);
+}
+
+/* header, h1, nav, nav ul, and nav li are all styling the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:palegreen;
+    border-top: solid black 3px;
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+    width: 100%;
+}
+
+h1 {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius:20px;
+}
+
+nav {
+    background-color:palegreen;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    font-size: 15px;
+    background-color:palegreen;
+
+}
+
+nav li {
+    display: flex;
+    border-radius: 20px;
+    background-color: lightblue;
+    padding: 10px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+/*section, and section h2 are all styling the Projects section */
+section {
+    margin-bottom: 100px;
+}
+
+section h2 {
+    display: flex;
+    width: 150px;
+}
+
+/* h3 and footer style the bottom footer section */
+h3 {
+    border: black solid 1px;
+    max-width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+/* page-links and banner style the header */
+.page-links {
+    background-color: lightblue;
+}
+
+.banner {
+    border-right: black solid 3px;
+    border-left: solid black 3px;
+    border-bottom: solid black 3px;
+    width: 100%;
+}
+
+/* words, about-and-pic, and krystyn all style the about me area */
+.words {
+    border-left: black solid 5px;
+    width: 600px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-and-pic {
+    align-content: right;
+    padding-right: 20px;
+}
+
+.krystyn {
+    border-radius: 30%;
+    max-width: 150px;
+}
+
+/* knowledge, scratchgames, and currentprojects style the main containers for the projects section */
+.knowledge {
+    border: solid black 3px;
+    margin: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.scratchgames {
+    border: solid black 3px;
+    margin-left: 50px;
+    position: relative;
+    flex: 1;
+}
+
+.currentprojects {
+    border: solid black 3px;
+    margin-right: 50px;
+    position: relative;
+    flex: 1;
+} 
+
+/* titles-for-content positions the project titles over the pictures */
+.titles-for-content {
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* .featuredcontent and .othercontent create the picture sizes in projects */
+.featuredcontent {
+    height: 100;
+    width: 100%;
+}
+
+.othercontent {
+    height: 100%;
+    width: 100%;
+} 
+
+/* .sidebyside-aboutme, .sidebyside, and .projectalignment help align the containers in the project area */
+.sidebyside-aboutme {
+    display: flex;
+    margin-top: 30px;
+}
+
+.sidebyside {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectalignment {
+    display: flex;
+    display: block;
+    flex-direction: row;
+}
+
+/* below are the media queries to adjust the view and color of the page as the screen adjusts*/
+@media screen and (max-width: 1000px) {
+    header {
+        background-color: lightseagreen;
+    }
+    nav {
+        background-color: lightseagreen;
+    }
+    nav ul {
+        background-color: lightseagreen;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    header {
+        background-color: lightyellow;
+    }
+    nav {
+        background-color: lightyellow;
+      }
+    nav ul {
+        background-color: lightyellow;
+    }
+    .words {
+        border: black solid 5px;
+        width: 100%;
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebyside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  
+
+  @media screen and (max-width: 576px) {
+    header {
+        background-color: darkolivegreen;
+        min-width: 517px;
+    }
+    nav {
+        background-color: darkolivegreen;
+    }
+    nav ul {
+        background-color: darkolivegreen;
+    }
+    .sidebyside-aboutme {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebyside {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 450px;
+    }
+    .banner {
+        min-width: 517px;
+    }
+    .words {
+        min-width: 500px;
+    }  
+    .footer {
+        min-width: 500px;
+    }
+  }
