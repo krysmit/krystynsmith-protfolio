@@ -62,10 +62,24 @@ footer {
     background-color: azure;
 }
 
+#projHi1 {
+    border: solid black 3px;
+    margin-left: 50px;
+    position: relative;
+    flex: 1;
+}
+
+#projHi2 {
+    border: solid black 3px;
+    margin-right: 50px;
+    position: relative;
+    flex: 1;
+} 
+
 .contactInfo {
     border: black 3px solid;
     background: azure;
-
+    padding: 20px;
 }
 .listInfo {
     background: azure;
@@ -112,23 +126,9 @@ footer {
 .knowledge {
     border: solid black 3px;
     margin: 10px;
-    width: 80%;
+    width: 50%;
     position: relative;
 }
-
-.scratchgames {
-    border: solid black 3px;
-    margin-left: 50px;
-    position: relative;
-    flex: 1;
-}
-
-.currentprojects {
-    border: solid black 3px;
-    margin-right: 50px;
-    position: relative;
-    flex: 1;
-} 
 
 .titles-for-content {
     position: absolute;
