@@ -40,7 +40,7 @@ section h2 {
     width: 150px;
 }
 
-h3 {
+h5 {
     border: black solid 1px;
     max-width: 150px;
     display: flex;
@@ -65,6 +65,7 @@ footer {
 #projHi1 {
     border: solid black 3px;
     margin-left: 50px;
+    margin-right: 50px;
     position: relative;
     flex: 1;
 }
@@ -72,9 +73,18 @@ footer {
 #projHi2 {
     border: solid black 3px;
     margin-right: 50px;
+    margin-left: 50px;
     position: relative;
     flex: 1;
 } 
+
+#aboutme,
+#projects,
+#contact {
+    font-size: 35px;
+}
+
+
 
 .contactInfo {
     border: black 3px solid;
@@ -83,6 +93,7 @@ footer {
 }
 .listInfo {
     background: azure;
+    font-size: 20px;
 }
 
 .page-links {
@@ -98,6 +109,7 @@ footer {
     top: 100px;
     left: 20px;
     background-color: transparent;
+    font-size: 45px;
 }
 
 .words {
@@ -132,6 +144,15 @@ footer {
 
 .titles-for-content {
     position: absolute;
+    top: 8px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.words-for-content {
+    position: absolute;
     bottom: 8px;
     left: 0px;
     background-color: black;
@@ -165,28 +186,12 @@ footer {
     flex-direction: row;
 }
 
-@media screen and (max-width: 1000px) {
-    header {
-        background-color: lightseagreen;
-    }
-    nav {
-        background-color: lightseagreen;
-    }
-    nav ul {
-        background-color: lightseagreen;
-    }
-  }
-  
 
   @media screen and (max-width: 768px) {
-    header {
-        background-color: lightyellow;
-    }
-    nav {
-        background-color: lightyellow;
-      }
-    nav ul {
-        background-color: lightyellow;
+    #projHi1,
+    #projHi2 {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .words {
         border: black solid 5px;
@@ -195,25 +200,21 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-
     .sidebyside {
         display: flex;
         flex-wrap: wrap;
     }
+    .meIntro {
+        font-size: 20px;
+    }
+    .words-for-content {
+        display: none;
+    }
+
   }
   
 
   @media screen and (max-width: 576px) {
-    header {
-        background-color: darkolivegreen;
-        min-width: 517px;
-    }
-    nav {
-        background-color: darkolivegreen;
-    }
-    nav ul {
-        background-color: darkolivegreen;
-    }
     h1 {
         font-size: 80%;
     }
@@ -234,5 +235,8 @@ footer {
     }  
     .footer {
         min-width: 500px;
+    }
+    .words-for-content {
+        display: none;
     }
   }
