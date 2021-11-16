@@ -1,8 +1,8 @@
 # Profesional Portfolio
 ## Deployed Website
-https://krysmit.github.io/portfolio-updated/
+https://krysmit.github.io/krystynsmith-protfolio/
 ## GitHub Repository
-https://github.com/krysmit/portfolio-updated
+https://github.com/krysmit/krystynsmith-protfolio
 
 ### Project Summary
 
